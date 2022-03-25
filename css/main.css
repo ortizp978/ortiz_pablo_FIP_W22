@@ -94,12 +94,6 @@ a:active {
   justify-content: flex-end;
 }
 
-/* #homeCover p {
-  margin-left: 50px;
-  line-height: 50px;
-  font-size: 50px;
-} */
-
 #heroImage {
   width: 100%;
   display: flex;
@@ -132,21 +126,144 @@ a:active {
   text-align: left;
 }
 
-#play_video {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100px;
-  height: 40px;
-  background-color: #ccc;
-  margin-top: 55px;
-  margin-right: 80px;
+.playVideo1 {
+  background-color: #0075A9;
+  width: 180px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+  line-height: 50px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  transition: width 0.5s, height 0.5s, transform 0.5s;
+  position: absolute;
+  top: 620px;
+  left: 740px;
+  cursor: pointer;
+}
+
+.playVideo1:hover {
+  background-color: #1C355E;
+  transform : scale(1.1);
+}
+
+.ProductMonth {
+  background-color: #0075A9;
+  width: 180px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+  line-height: 50px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  transition: width 0.5s, height 0.5s, transform 0.5s;
+  position: absolute;
+  top: 380px;
+  left: 880px;
+  cursor: pointer;
+}
+
+.ProductMonth:hover {
+  background-color: #1C355E;
+  transform : scale(1.1);
+}
+
+.playVideo2 {
+  background-color: #0075A9;
+  width: 180px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+  line-height: 50px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+  transition: width 0.5s, height 0.5s, transform 0.5s;
+  position: absolute;
+  top: 550px;
+  left: 690px;
+  cursor: pointer;
+}
+
+.playVideo2:hover {
+  background-color: #1C355E;
+  transform : scale(1.1);
+}
+
+.lightbox {
+  display: none;
+  position: absolute;
+  left: 0;
+  margin-top: -100px;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.show-lightbox { display: block; }
+
+.lightbox .close {
+  position: relative;
+  float: right;
+  font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  margin-right: 150px;
+  margin-top: 60px;
+  font-size: 50px;
+  color: white;
+}
+
+video {
+	width: 70%;
+	border: thin solid #949393;
+  margin-top: 70px;
+  margin-left: 200px;
+  justify-content: center;
+}
+
+.lightboxProducts {
+  display: none;
+  position: absolute;
+  left: 0;
+  margin-top: -462px;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.show-lightboxProducts { display: block; }
+
+.lightboxProducts .close {
+  position: relative;
+  float: right;
+  font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  margin-right: 150px;
+  margin-top: 60px;
+  font-size: 50px;
+  color: white;
+}
+
+.lightboxProducts img {
+  margin-top: 70px;
+  margin-left: 310px;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .text_over {
   display: flex;
   position: absolute;
-  /* top: 180px;
-  left: 620px; */
 }
 
 .form_over {
@@ -207,22 +324,6 @@ a:active {
   width: 360px;
   height: 180px;
   border-radius: 10px;
-}
-
-.product img {
-  animation-name: rotate;
-  animation-duration: 1s;
-  animation-delay: 1s;
-  animation-iteration-count: 2;
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 .product h1 {
@@ -499,6 +600,64 @@ a:active {
       text-decoration: none;
       color: #0075A9;
       transform : none;
+    }
+
+    .playVideo1 {
+      background-color: #0075A9;
+      width: 180px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      font-weight: bold;
+      font-size: 20px;
+      color: #fff;
+      line-height: 50px;
+      margin-right: 10px;
+      border: none;
+      border-radius: 5px;
+      text-align: center;
+      transition: width 0.5s, height 0.5s, transform 0.5s;
+      position: absolute;
+      top: 900px;
+      left: 350px;
+      cursor: pointer;
+    }
+
+    .playVideo1:hover {
+      background-color: #1C355E;
+      transform : scale(1.1);
+    }
+
+    .lightbox {
+      display: none;
+      position: absolute;
+      left: 0;
+      margin-top: -200px;
+      width: 100%;
+      height: 100vh;
+
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.85);
+    }
+
+    .show-lightbox { display: block; }
+
+    .lightbox .close {
+      position: relative;
+      float: right;
+      font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+      font-weight: bold;
+      margin-right: 50px;
+      margin-top: 50px;
+      font-size: 50px;
+      color: white;
+    }
+
+    video {
+    	width: 80%;
+    	border: thin solid #949393;
+      margin-top: 10px;
+      margin-left: 70px;
+      justify-content: center;
     }
 
 
